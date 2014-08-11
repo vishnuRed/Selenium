@@ -5,7 +5,8 @@ WORKDIR /usr/seleniumProject
 RUN wget https://github.com/vishnuRed/Selenium/archive/master.zip
 RUN apt-get -y install unzip
 RUN unzip Selenium-master.zip
-RUN cd Selenium-master/selenium example 
+CMD /bin/bash
+#RUN cd Selenium-master/selenium example 
 #ADD https://raw.githubusercontent.com/vishnuRed/OracleJava/master/Helloworld.java  ./usr/javaApplication/
 #
 #RUN javac Helloworld.java
