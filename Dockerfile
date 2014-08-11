@@ -3,7 +3,7 @@ MAINTAINER VISHNU "vishnu.virtual@gmail.com"
 RUN mkdir /usr/seleniumProject
 WORKDIR /usr/seleniumProject
 RUN wget https://github.com/vishnuRed/Selenium/archive/master.zip
-RUN apt-get -y nstall unzip
+RUN apt-get -y install unzip
 RUN unzip Selenium-master.zip
 RUN cd Selenium-master/selenium example 
 #ADD https://raw.githubusercontent.com/vishnuRed/OracleJava/master/Helloworld.java  ./usr/javaApplication/
