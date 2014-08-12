@@ -10,6 +10,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class SeleniumExample {
+		
+ public static void main(String[] args){
+           SeleniumExample example=new SeleniumExample();
+           System.out.println("Hai i am going to start ");
+           org.junit.runner.JUnitCore jcore=new org.junit.runner.JUnitCore();
+           jcore.run(example.getClass()); 
+           System.out.println("I am done ");
+
+        }
 	
 	private WebDriver driver;
 	  private String baseUrl;
