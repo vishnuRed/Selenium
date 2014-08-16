@@ -27,7 +27,7 @@ public class SeleniumExample {
 	  	System.out.println("Hai i am at start of setup  ");
 	    driver = new FirefoxDriver();
 	    driver.manage().window().maximize();
-	    baseUrl = "https://www.google.co.in/";
+	   baseUrl = "http://prokarma.force.com/Indiajobs";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    System.out.println("Hai i am  at end of setup ");
 	    
@@ -37,10 +37,11 @@ public class SeleniumExample {
 	  public void testSELENIUMeXAMPLE() throws Exception {
 	  	System.out.println("Hai i am at start of test  ");
 	    driver.get(baseUrl);
-	    driver.findElement(By.id("gs_tti0")).click();
-	    driver.findElement(By.id("gbqfq")).clear();
-	    driver.findElement(By.id("gbqfq")).sendKeys("SELENIUM");
-	    driver.findElement(By.id("gbqfb")).click();
+	    driver.findElement(By.name("j_id0:j_id1:atsForm:j_id38")).click();
+	    driver.findElement(By.name("j_id0:j_id1:atsForm:j_id38")).clear();
+	    driver.findElement(By.name("j_id0:j_id1:atsForm:j_id38")).sendKeys("java");
+	    driver.findElement(By.name("j_id0:j_id1:atsForm:j_id45")).click();
+            driver.getCurrentUrl();
 	    System.out.println("Hai i am at end of test  ");
 	  }
 
