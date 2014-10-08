@@ -16,3 +16,6 @@ through localhost  port 5900
 and password is 1234
 
 then run the command in vnc java SeleniumExample
+
+working great 
+
